@@ -5,7 +5,8 @@
             "azureActiveDirectory": {
                 "registration": {
                     "openIdIssuer": "https://login.microsoftonline.com/b1a4f7cb-a159-44a6-ac48-6674e85c4ddc",
-                    "clientSecretCertificateKeyVaultReference": "@Microsoft.KeyVault(SecretUri=https://<KEY_VAULT_NAME>.azure.net/certificates/<CERTIFICATE_NAME>/<CERTIFICATE_VERSION_ID>)",
+                    "clientIdSettingName": "AZURE_CLIENT_ID",
+                    "clientSecretCertificateKeyVaultReference": "@Microsoft.KeyVault(SecretUri=https://ic3-eng-excellence.vault.azure.net/certificates/eng-excell-livingdoc-aad/)",
                     "clientSecretCertificateThumbprint": "*"
                 }
             }
