@@ -5,8 +5,8 @@
             "azureActiveDirectory": {
                 "registration": {
                     "openIdIssuer": "https://login.microsoftonline.com/b1a4f7cb-a159-44a6-ac48-6674e85c4ddc",
-                    "clientIdSettingName": "AZURE_CLIENT_ID",
-                    "clientSecretSettingName": "AZURE_CLIENT_SECRET_APP_SETTING_NAME"
+                    "clientSecretCertificateKeyVaultReference": "@Microsoft.KeyVault(SecretUri=https://<KEY_VAULT_NAME>.azure.net/certificates/<CERTIFICATE_NAME>/<CERTIFICATE_VERSION_ID>)",
+                    "clientSecretCertificateThumbprint": "*"
                 }
             }
         }
@@ -18,5 +18,5 @@
                 "authenticated"
             ]
         }
-    ],
+    ]
 }
